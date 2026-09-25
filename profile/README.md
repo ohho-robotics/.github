@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ohho-robotics/ohho-robotics.com/main/public/ohho-logo.svg" alt="OhhO Robotics Logo" width="200"/>
+  <img src="ohho-logo.svg" alt="OhhO Robotics Logo" width="200"/>
   <h1>Welcome to OhhO Robotics 🤖</h1>
   <p><strong>Building the Open-Source Standard for Embodied AI & Mobile Manipulation</strong></p>
   
