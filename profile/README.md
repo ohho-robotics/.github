@@ -24,7 +24,14 @@ We utilize a **Dual-License Architecture** to foster community innovation while 
 ### 🧠 Core Platform
 *   [**ohho-robotics.com**](https://github.com/ohho-robotics/ohho-robotics.com) - The **OhhO OS** Cloud Platform (Next.js). The central dashboard for Fleet management, Digital Twins, AI Training pipelines, and MCP server integrations. *(Source-Available)*
 *   [**ohho-sdk**](https://github.com/ohho-robotics/ohho-sdk) - The open standard NPM packages for our communication protocols (WebSerial, WebBluetooth, ROSBridge), MCP tools, and JSON schemas. *(MIT)*
-*   [**OmniBot**](https://github.com/ohho-robotics/OmniBot) - The complete reference hardware architecture and meta-repository. Clone this to spin up a fully functioning AI robot via Docker in minutes. *(Apache 2.0)*
+
+### 🤖 Hardware Reference Architectures (Apache 2.0)
+To prove the versatility of the OhhO architecture, we maintain reference meta-repositories for the industry's most popular robot form factors. Clone any of these to instantly spin up an OhhO-compatible robot via Docker:
+
+*   [**OmniBot**](https://github.com/ohho-robotics/OmniBot) - The flagship mecanum-wheel mobile manipulator. Features 9-DOF LeRobot teleoperation and stitched Bird's-Eye-View (BEV) perception.
+*   [**OhhO-Humanoid**](https://github.com/ohho-robotics/OhhO-Humanoid) - The bipedal reference architecture. Demonstrates whole-body control (WBC) and dual-arm mobile manipulation using SmolVLA.
+*   [**OhhO-Quadruped**](https://github.com/ohho-robotics/ohho-quadrupud) - The 4-legged reference architecture. Showcases Isaac Lab Reinforcement Learning locomotion integrated with OpenVLA for semantic navigation.
+*   [**OhhO-Drone**](https://github.com/ohho-robotics/OhhO-Drone) - The aerial robotics architecture. Integrates MAVLink and PX4 with the OhhO cloud for autonomous 3D spatial mapping and fleet swarm control.
 
 ### 🦾 Robotics & AI Engines (Apache 2.0)
 *   [**omnibot-ros2**](https://github.com/ohho-robotics/omnibot-ros2) - The foundational ROS 2 Jazzy workspace (navigation, SLAM, kinematics, arm control).
@@ -44,11 +51,11 @@ We utilize a **Dual-License Architecture** to foster community innovation while 
 ---
 
 ## 🚀 Get Started
-The fastest way to experience the OhhO platform is to run the digital twin in simulation:
+The fastest way to experience the OhhO platform is to run a digital twin in simulation:
 
 ```bash
-git clone https://github.com/ohho-robotics/OmniBot.git
-cd OmniBot
+git clone https://github.com/ohho-robotics/OhhO-Humanoid.git
+cd OhhO-Humanoid
 docker compose -f docker-compose.sim.yml up -d
 ```
 
