@@ -22,7 +22,7 @@ Our flagship platform bridges the gap between hardware control (ROS 2) and moder
 We utilize a **Dual-License Architecture** to foster community innovation while building a sustainable enterprise business. Our robotics, AI engines, and SDKs are permissively licensed (MIT/Apache 2.0) for universal reuse, while our full-stack SaaS UI operates under a "Source-Available" (BSL) model.
 
 ### 🧠 Core Platform
-*   [**ohho-robotics.com**](https://github.com/ohho-robotics/ohho-robotics.com) - The **OhhO OS** Cloud Platform (Next.js). The central dashboard for Fleet management, Digital Twins, AI Training pipelines, and MCP server integrations. *(Source-Available)*
+*   [**ohho-robotics.com**](https://github.com/ohho-robotics/ohho-robotics.com) - The **OhhO OS** Cloud Platform (Next.js). The central dashboard for Fleet management, Digital Twins, AI Training pipelines, and MCP server integrations. *(Source- not Available)*
 *   [**ohho-sdk**](https://github.com/ohho-robotics/ohho-sdk) - The open standard NPM packages for our communication protocols (WebSerial, WebBluetooth, ROSBridge), MCP tools, and JSON schemas. *(MIT)*
 
 ### 🤖 Hardware Reference Architectures (Apache 2.0)
@@ -33,11 +33,6 @@ To prove the versatility of the OhhO architecture, we maintain reference meta-re
 *   [**OhhO-Quadruped**](https://github.com/ohho-robotics/ohho-quadrupud) - The 4-legged reference architecture. Showcases Isaac Lab Reinforcement Learning locomotion integrated with OpenVLA for semantic navigation.
 *   [**OhhO-Drone**](https://github.com/ohho-robotics/OhhO-Drone) - The aerial robotics architecture. Integrates MAVLink and PX4 with the OhhO cloud for autonomous 3D spatial mapping and fleet swarm control.
 
-### 🦾 Robotics & AI Engines (Apache 2.0)
-*   [**omnibot-ros2**](https://github.com/ohho-robotics/omnibot-ros2) - The foundational ROS 2 Jazzy workspace (navigation, SLAM, kinematics, arm control).
-*   [**omnibot-ai-ros2**](https://github.com/ohho-robotics/omnibot-ai-ros2) - The ROS 2 wrappers linking physical hardware to AI foundation models.
-*   [**omnibot-ai-engines**](https://github.com/ohho-robotics/omnibot-ai-engines) - Pure Python/FastAPI backend servers for OpenVLA inference, RL training, and LeRobot episode data collection.
-*   [**omnibot-digital-twin**](https://github.com/ohho-robotics/omnibot-digital-twin) - High-fidelity Gazebo and Isaac Sim environments.
 
 ### 📱 Client Apps (MIT)
 *   [**OhhO-VR**](https://github.com/ohho-robotics/OhhO-VR) - Unity-based mixed-reality client for Meta Quest 3 teleoperation and spatial data collection.
