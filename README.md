@@ -1,66 +1,78 @@
 <div align="center">
-  <img src="ohho-logo.svg" alt="OhhO Robotics Logo" width="200"/>
-  <h1>Welcome to OhhO Robotics 🤖</h1>
-  <p><strong>Building the Open-Source Standard for Embodied AI & Mobile Manipulation</strong></p>
-  
-  <a href="https://ohho-robotics.com">Website</a> •
-  <a href="https://ohho-robotics.com/docs">Documentation</a> •
-  <a href="https://discord.gg/ohhorobotics">Discord Community</a>
+  <img src="profile/ohho-logo.svg" alt="OhhO Robotics logo" width="200"/>
+  <h1>OhhO Robotics</h1>
+  <p>Open-source mobile manipulation. The robot you can inspect today is <a href="https://github.com/ohho-robotics/OmniBot">OmniBot</a>.</p>
+
+  <a href="https://ohho-robotics.com">Website</a> ·
+  <a href="https://ohho-robotics.com/docs">Documentation</a> ·
+  <a href="https://www.youtube.com/@varun.vaidhiya/videos">Demos</a>
 </div>
 
 ---
 
-## 🌍 About Us
-At **OhhO Robotics**, we are democratizing embodied AI. We build the foundational open-source ecosystem that allows anyone—from students to enterprise factories—to simulate, train, and operate AI-driven robots at scale. 
+## OmniBot
 
-Our flagship platform bridges the gap between hardware control (ROS 2) and modern foundation models (OpenVLA, SmolVLA, LeRobot), giving robots the ability to see, think, and interact with the physical world.
+<a href="https://github.com/ohho-robotics/OmniBot"><img src="https://raw.githubusercontent.com/ohho-robotics/OmniBot/main/assets/PXL_20260505_121303728.jpg" width="49%" alt="OmniBot, photo from the OmniBot repository"/></a>
+<a href="https://github.com/ohho-robotics/OmniBot"><img src="https://raw.githubusercontent.com/ohho-robotics/OmniBot/main/assets/PXL_20260505_121328008.jpg" width="49%" alt="OmniBot, second photo from the OmniBot repository"/></a>
 
----
+[OmniBot](https://github.com/ohho-robotics/OmniBot) is the public meta-repository: ROS 2 code, photos, and the client trees. Short clips from that repo: [demo 1](https://github.com/ohho-robotics/OmniBot/blob/main/assets/Omnibot_demo1.gif) and [demo 2](https://github.com/ohho-robotics/OmniBot/blob/main/assets/Omnibot_demo2.gif). The [OmniBot README](https://github.com/ohho-robotics/OmniBot/blob/main/README.md) documents the hardware (Raspberry Pi 5, Yahboom expansion board, SO-101 arm) and a YouTube channel.
 
-## 🛠️ The OhhO Ecosystem
+What is in the tree:
 
-We utilize a **Dual-License Architecture** to foster community innovation while building a sustainable enterprise business. Our robotics, AI engines, and SDKs are permissively licensed (MIT/Apache 2.0) for universal reuse, while our full-stack SaaS UI operates under a "Source-Available" (BSL) model.
+*   [**omnibot-ros2**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-ros2) — ROS 2 packages `omnibot_driver`, `omnibot_bringup`, `omnibot_navigation`, `omnibot_arm`, `omnibot_description`, and `omnibot_hybrid`. Launch files, including `robot_with_joy.launch.py` and `perception.launch.py`, are in [`omnibot_bringup/launch`](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-ros2/omnibot_bringup/launch).
+*   [**omnibot-ai-ros2**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-ai-ros2) — ROS 2 packages including `omnibot_vla`, `omnibot_lerobot` (with `teleop_recorder_node.py`), `omnibot_rl`, and `omnibot_orchestration`.
+*   [**omnibot-ai-engines**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-ai-engines) — Python packages `agent_engine`, `data_engine`, `learning_engine`, `lerobot_engine`, `rl_engine`, and `vla_engine`.
+*   [**omnibot-digital-twin**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-digital-twin) — simulation notes and world files in that directory.
+*   [**omnibot-vr**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-vr) and [**omnibot-android**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-android) — client trees kept inside this meta-repository. The standalone repos are listed below.
 
-### 🧠 Core Platform
-*   [**ohho-robotics.com**](https://github.com/ohho-robotics/ohho-robotics.com) - The **OhhO OS** Cloud Platform (Next.js). The central dashboard for Fleet management, Digital Twins, AI Training pipelines, and MCP server integrations. *(Source-Available)*
-*   [**ohho-sdk**](https://github.com/ohho-robotics/ohho-sdk) - The open standard NPM packages for our communication protocols (WebSerial, WebBluetooth, ROSBridge), MCP tools, and JSON schemas. *(MIT)*
+## ohho-sdk
 
-### 🤖 Hardware Reference Architectures (Apache 2.0)
-To prove the versatility of the OhhO architecture, we maintain reference meta-repositories for the industry's most popular robot form factors. Clone any of these to instantly spin up an OhhO-compatible robot via Docker:
+[ohho-sdk](https://github.com/ohho-robotics/ohho-sdk) is a TypeScript workspace. `package.json` sets `"private": true`. These packages are not published to npm.
 
-*   [**OmniBot**](https://github.com/ohho-robotics/OmniBot) - The flagship mecanum-wheel mobile manipulator. Features 9-DOF LeRobot teleoperation and stitched Bird's-Eye-View (BEV) perception.
-*   [**OhhO-Humanoid**](https://github.com/ohho-robotics/OhhO-Humanoid) - The bipedal reference architecture. Demonstrates whole-body control (WBC) and dual-arm mobile manipulation using SmolVLA.
-*   [**OhhO-Quadruped**](https://github.com/ohho-robotics/ohho-quadrupud) - The 4-legged reference architecture. Showcases Isaac Lab Reinforcement Learning locomotion integrated with OpenVLA for semantic navigation.
-*   [**OhhO-Drone**](https://github.com/ohho-robotics/OhhO-Drone) - The aerial robotics architecture. Integrates MAVLink and PX4 with the OhhO cloud for autonomous 3D spatial mapping and fleet swarm control.
+*   [`@ohho/connect`](https://github.com/ohho-robotics/ohho-sdk/tree/main/packages/connect) — source for WebSerial, WebBluetooth, ROSBridge, and Yahboom adapters (`packages/connect/src`).
+*   [`@ohho/schemas`](https://github.com/ohho-robotics/ohho-sdk/tree/main/packages/schemas) — Zod schema modules.
+*   [`@ohho/mcp`](https://github.com/ohho-robotics/ohho-sdk/tree/main/packages/mcp) — MCP tool modules and a registry.
+*   [`@ohho/client`](https://github.com/ohho-robotics/ohho-sdk/blob/main/packages/client/src/api.ts) — **Roadmap.** `OhhOClient` is an empty class.
 
-### 🦾 Robotics & AI Engines (Apache 2.0)
-*   [**omnibot-ros2**](https://github.com/ohho-robotics/omnibot-ros2) - The foundational ROS 2 Jazzy workspace (navigation, SLAM, kinematics, arm control).
-*   [**omnibot-ai-ros2**](https://github.com/ohho-robotics/omnibot-ai-ros2) - The ROS 2 wrappers linking physical hardware to AI foundation models.
-*   [**omnibot-ai-engines**](https://github.com/ohho-robotics/omnibot-ai-engines) - Pure Python/FastAPI backend servers for OpenVLA inference, RL training, and LeRobot episode data collection.
-*   [**omnibot-digital-twin**](https://github.com/ohho-robotics/omnibot-digital-twin) - High-fidelity Gazebo and Isaac Sim environments.
+## OhhO-VR
 
-### 📱 Client Apps (MIT)
-*   [**OhhO-VR**](https://github.com/ohho-robotics/OhhO-VR) - Unity-based mixed-reality client for Meta Quest 3 teleoperation and spatial data collection.
-*   [**ohho.apk**](https://github.com/ohho-robotics/ohho.apk) - Native Android mobile controller and telemetry viewer.
+[OhhO-VR](https://github.com/ohho-robotics/OhhO-VR) is a Unity project (`Assets`, `Packages`, `ProjectSettings` at the repo root). Its README documents a Meta Quest teleop client for OmniBot over ROSBridge.
 
-### 🧩 Open-Source Tools & Libraries (MIT)
-*   [**ros2-bev-stitcher**](https://github.com/ohho-robotics/ros2-bev-stitcher) - Real-time Bird's-Eye View camera stitching for ROS 2.
-*   [**yahboom-python-driver**](https://github.com/ohho-robotics/yahboom-python-driver) - Pure-Python protocol encoder/decoder for Yahboom expansion boards.
-*   [**mecanum-kinematics**](https://github.com/ohho-robotics/mecanum-kinematics) - Modular math library for omnidirectional drive systems.
+## ohho.apk
 
----
+[ohho.apk](https://github.com/ohho-robotics/ohho.apk) is a Kotlin Gradle project. Its README documents an Android ROSBridge controller for OmniBot.
 
-## 🚀 Get Started
-The fastest way to experience the OhhO platform is to run a digital twin in simulation:
+## Concept — not started
+
+These repositories are a README, a compose file, and an `ohho.repos` manifest. They do not contain a robot stack. The compose images and the Git repositories named in `ohho.repos` are not published, so there is no quick-start command here.
+
+*   [ohho-humanoid](https://github.com/ohho-robotics/ohho-humanoid)
+*   [ohho-quadrupud](https://github.com/ohho-robotics/ohho-quadrupud) — the repository name is spelled `quadrupud`
+*   [ohho-drone](https://github.com/ohho-robotics/ohho-drone)
+
+## Libraries inside OmniBot
+
+These are directories in [OmniBot](https://github.com/ohho-robotics/OmniBot), not separate repositories.
+
+| Directory | What the code is |
+|---|---|
+| [`mecanum-kinematics`](https://github.com/ohho-robotics/OmniBot/tree/main/mecanum-kinematics) | Mecanum wheel kinematics (C++ header and a Python mirror). This directory has an Apache-2.0 `LICENSE` file. |
+| [`ros2-bev-stitcher`](https://github.com/ohho-robotics/OmniBot/tree/main/ros2-bev-stitcher) | ROS 2 node that warps several cameras into one bird's-eye view. |
+| [`yahboom-python-driver`](https://github.com/ohho-robotics/OmniBot/tree/main/yahboom-python-driver) | Serial protocol encoder/decoder for Yahboom expansion boards, with a ROS 2 driver. |
+
+The other OmniBot directories (`omnibot-ros2`, `omnibot-ai-ros2`, `omnibot-ai-engines`, `omnibot-digital-twin`) are linked above. None of them is its own GitHub repository.
+
+## Get Started
 
 ```bash
-git clone https://github.com/ohho-robotics/OhhO-Humanoid.git
-cd OhhO-Humanoid
-docker compose -f docker-compose.sim.yml up -d
+git clone https://github.com/ohho-robotics/OmniBot.git
+cd OmniBot
 ```
 
-## 🤝 Contributing
-We love open-source contributions! Whether you're integrating a new robot protocol into **OhhO Connect**, contributing an AI skill to **OhhO Market**, or fixing a bug in the documentation, your PRs are always welcome. 
+ROS 2 packages live in `omnibot-ros2/` (there is no `src/` directory). The [OmniBot README](https://github.com/ohho-robotics/OmniBot/blob/main/README.md) documents Ubuntu 24.04 and ROS 2 Jazzy as the target for those packages.
 
-## 💼 Enterprise (OhhO Forge)
-Running a fleet of robots in production? We offer enterprise subscriptions for managed cloud-GPU training (OhhO Train), massive fleet telemetry orchestration (OhhO Fleet), and SOC2-compliant security reporting (OhhO Comply). [Contact us for access.](mailto:enterprise@ohho-robotics.com)
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [SECURITY.md](SECURITY.md).
+
+Public repositories do not yet have a top-level `LICENSE` file, except the Apache-2.0 file inside `OmniBot/mecanum-kinematics`. Do not assume a license for the rest.
