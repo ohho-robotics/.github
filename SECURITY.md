@@ -19,4 +19,4 @@ There is no bug-bounty program. This file does not state a compliance certificat
 
 The public repositories are [OmniBot](https://github.com/ohho-robotics/OmniBot), [ohho-sdk](https://github.com/ohho-robotics/ohho-sdk), [OhhO-VR](https://github.com/ohho-robotics/OhhO-VR), [ohho.apk](https://github.com/ohho-robotics/ohho.apk), and this `.github` repository.
 
-[ohho-humanoid](https://github.com/ohho-robotics/ohho-humanoid), [ohho-quadrupud](https://github.com/ohho-robotics/ohho-quadrupud), and [ohho-drone](https://github.com/ohho-robotics/ohho-drone) are concept placeholders with no running service.
+[ohho-humanoid](https://github.com/ohho-robotics/ohho-humanoid), [ohho-quadruped](https://github.com/ohho-robotics/ohho-quadruped), and [ohho-drone](https://github.com/ohho-robotics/ohho-drone) are concept placeholders with no running service.

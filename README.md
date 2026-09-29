@@ -47,7 +47,7 @@ What is in the tree:
 These repositories are a README, a compose file, and an `ohho.repos` manifest. They do not contain a robot stack. The compose images and the Git repositories named in `ohho.repos` are not published, so there is no quick-start command here.
 
 *   [ohho-humanoid](https://github.com/ohho-robotics/ohho-humanoid)
-*   [ohho-quadrupud](https://github.com/ohho-robotics/ohho-quadrupud) — the repository name is spelled `quadrupud`
+*   [ohho-quadruped](https://github.com/ohho-robotics/ohho-quadruped)
 *   [ohho-drone](https://github.com/ohho-robotics/ohho-drone)
 
 ## Libraries inside OmniBot

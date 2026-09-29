@@ -12,7 +12,7 @@ OhhO Robotics is a small public GitHub organization. The code a contributor can 
 | [ohho.apk](https://github.com/ohho-robotics/ohho.apk) | Kotlin Android project |
 | [ohho-robotics/.github](https://github.com/ohho-robotics/.github) | This organization profile and the default community files |
 
-[ohho-humanoid](https://github.com/ohho-robotics/ohho-humanoid), [ohho-quadrupud](https://github.com/ohho-robotics/ohho-quadrupud), and [ohho-drone](https://github.com/ohho-robotics/ohho-drone) are **Concept — not started**. They do not contain a buildable robot stack. Please do not open feature work against them until there is code to build.
+[ohho-humanoid](https://github.com/ohho-robotics/ohho-humanoid), [ohho-quadruped](https://github.com/ohho-robotics/ohho-quadruped), and [ohho-drone](https://github.com/ohho-robotics/ohho-drone) are **Concept — not started**. They do not contain a buildable robot stack. Please do not open feature work against them until there is code to build.
 
 ## Pull requests
 
