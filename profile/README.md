@@ -75,4 +75,4 @@ ROS 2 packages live in `omnibot-ros2/` (there is no `src/` directory). The [Omni
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md), [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md), and [SECURITY.md](../SECURITY.md).
 
-Public repositories do not yet have a top-level `LICENSE` file, except the Apache-2.0 file inside `OmniBot/mecanum-kinematics`. Do not assume a license for the rest.
+OhhO's public repositories are Apache-2.0. Vendored third-party code keeps its own license.

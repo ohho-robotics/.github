@@ -22,7 +22,7 @@ OhhO Robotics is a small public GitHub organization. The code a contributor can 
 
 ## License
 
-Public repositories do not yet have a top-level `LICENSE` file, except `OmniBot/mecanum-kinematics/LICENSE` (Apache-2.0). Until a `LICENSE` file is added to a repository, do not assume MIT, Apache-2.0, or any other grant for that repository.
+OhhO's public repositories are Apache-2.0. Vendored third-party code keeps its own license.
 
 ## Conduct
 
