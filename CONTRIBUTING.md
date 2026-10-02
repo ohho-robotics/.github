@@ -17,8 +17,21 @@ OhhO Robotics is a small public GitHub organization. The code a contributor can 
 ## Pull requests
 
 1. Fork the repository you are changing and open a pull request against `main`.
-2. Describe what changed and how you checked it.
+2. The org-default template ([.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md)) asks for what changed, how to run it, and evidence (a CI run, a test, or a dated video, trial CSV, MCAP, or dataset). Fill that in. A repository with its own template keeps that file instead.
 3. Do not add a public claim (a feature marked as working, a license, a compliance badge, or a "clone and run" command) unless the pull request links to the code, a CI run, or a recording that shows it.
+
+## Showcase rule
+
+A feature moves to Built on the live site only when all four are true. The [public roadmap](https://ohho-robotics.com/roadmap) (page not live yet) lists Built, In progress, and Vision.
+
+1. **Merged.** The code is on `main` of a public `ohho-robotics` repository. Private code does not count.
+2. **Runnable.** A stranger can run it from the README in 15 minutes or less (sim or laptop). If it needs hardware, the page says "needs hardware" and links a dated video plus logs or bag files.
+3. **Evidenced.** At least one of: a green CI run that exercises the feature, a test file, or a dated video, trial CSV, MCAP file, or dataset URL.
+4. **Copy matches the evidence.** Every number (tests, latency, success rate, version) comes from code or CI output. Do not use adjectives the evidence does not support ("production-ready", "any robot", "real-time", "enterprise").
+
+Anything else is In progress (an open Linear issue or pull request, and a target month) or Vision (no code yet; always labelled "Vision: not built", only on the roadmap or a product page's Vision section). A demo alone never counts: an in-browser console on simulated data stays "Interactive demo · simulated data".
+
+Do not publish, including as vision: logo, partner, insurer, or vendor walls; customer, fleet, or "in the field" claims; prices or paid plans; certification, "compliant", or DoC claims; team size, roles, or volunteer asks; AI-generated footage that is not labelled "Concept render: not footage of OmniBot".
 
 ## License
 
