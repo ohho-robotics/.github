@@ -1,0 +1,35 @@
+name: Links
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lychee:
+    name: lychee
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: >-
+            --verbose
+            --no-progress
+            --max-retries 8
+            --retry-wait-time 5
+            --timeout 30
+            --max-concurrency 2
+            --user-agent "Mozilla/5.0 (compatible; ohho-linkcheck/1.0; +https://github.com/ohho-robotics/.github)"
+            profile/README.md
+            README.md
+            CONTRIBUTING.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
