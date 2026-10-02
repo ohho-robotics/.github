@@ -7,7 +7,7 @@ OhhO Robotics is a small public GitHub organization. The code a contributor can 
 | Repository | What it is |
 |---|---|
 | [OmniBot](https://github.com/ohho-robotics/OmniBot) | ROS 2 workspace, AI packages, digital-twin notes, and the mecanum, BEV, and Yahboom directories |
-| [ohho-sdk](https://github.com/ohho-robotics/ohho-sdk) | TypeScript workspace (`@ohho/connect`, `@ohho/schemas`, `@ohho/mcp`). `@ohho/client` is a stub |
+| [ohho-sdk](https://github.com/ohho-robotics/ohho-sdk) | OhhO OS: Python package [`ohho-os`](https://pypi.org/project/ohho-os/) on PyPI. TypeScript sources under [`ts/packages/`](https://github.com/ohho-robotics/ohho-sdk/tree/main/ts/packages) are a private workspace (`@ohho/client` is an empty class) |
 | [OhhO-VR](https://github.com/ohho-robotics/OhhO-VR) | Unity project for Quest teleop |
 | [ohho.apk](https://github.com/ohho-robotics/ohho.apk) | Kotlin Android project |
 | [ohho-robotics/.github](https://github.com/ohho-robotics/.github) | This organization profile and the default community files |
