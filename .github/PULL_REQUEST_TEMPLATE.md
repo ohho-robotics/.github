@@ -20,7 +20,7 @@
 
 - [ ] None
 - [ ] Update lib/roadmap.ts in ohho-robotics/ohho-robotics.com (status/evidence)
-- [ ] Copy change reviewed against the showcase rule ([CONTRIBUTING.md](../CONTRIBUTING.md#showcase-rule))
+- [ ] Copy change reviewed against the showcase rule ([CONTRIBUTING.md](https://github.com/ohho-robotics/.github/blob/main/CONTRIBUTING.md#showcase-rule))
 
 ## Claims
 

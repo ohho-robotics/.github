@@ -31,7 +31,7 @@ A feature moves to Built on the live site only when all four are true. The [publ
 
 Anything else is In progress (an open Linear issue or pull request, and a target month) or Vision (no code yet; always labelled "Vision: not built", only on the roadmap or a product page's Vision section). A demo alone never counts: an in-browser console on simulated data stays "Interactive demo · simulated data".
 
-Do not publish, including as vision: logo, partner, insurer, or vendor walls; customer, fleet, or "in the field" claims; prices or paid plans; certification, "compliant", or DoC claims; team size, roles, or volunteer asks; AI-generated footage that is not labelled "Concept render: not footage of OmniBot".
+Do not publish, including as vision: logo, partner, insurer, or vendor walls; customer, fleet, or "in the field" claims; prices or paid plans; certification, "compliant", or DoC claims; team size, roles, or volunteer asks; AI-generated footage that is not labelled "Concept render — not footage of OmniBot" (the caption the site uses).
 
 ## License
 
