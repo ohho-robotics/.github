@@ -31,9 +31,9 @@ What is in the tree:
 *   [**omnibot-digital-twin**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-digital-twin) — configs, scripts, and world file [`omnibot_lab.sdf`](https://raw.githubusercontent.com/ohho-robotics/OmniBot/main/omnibot-digital-twin/worlds/omnibot_lab.sdf).
 *   [**omnibot-vr**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-vr) and [**omnibot-android**](https://github.com/ohho-robotics/OmniBot/tree/main/omnibot-android) — client trees kept inside this repository. The standalone repos are below.
 
-## ohho-sdk
+## ohho-os and ohho-sdk
 
-[ohho-sdk](https://github.com/ohho-robotics/ohho-sdk) is OhhO OS: the Python package [`ohho-os`](https://pypi.org/project/ohho-os/) ([Apache-2.0](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/LICENSE)). [`pyproject.toml`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/pyproject.toml) sets `name = "ohho-os"` and `version = "1.1.2"`. The [v1.1.2 release run](https://github.com/ohho-robotics/ohho-sdk/actions/runs/36844693250) completed successfully, and the [1.1.2 project page](https://pypi.org/project/ohho-os/1.1.2/) is the published distribution.
+[ohho-os](https://github.com/ohho-robotics/ohho-os) is OhhO OS: the Python package [`ohho-os`](https://pypi.org/project/ohho-os/) ([Apache-2.0](https://raw.githubusercontent.com/ohho-robotics/ohho-os/main/LICENSE)). [`pyproject.toml`](https://raw.githubusercontent.com/ohho-robotics/ohho-os/main/pyproject.toml) sets `name = "ohho-os"`. The [v1.1.2 release run](https://github.com/ohho-robotics/ohho-os/actions/runs/36844693250) completed successfully, and the [1.1.2 project page](https://pypi.org/project/ohho-os/1.1.2/) is the published distribution.
 
 ```bash
 pip install ohho-os
@@ -41,14 +41,14 @@ ohho doctor
 ohho sim --robot omnibot --seconds 2
 ```
 
-`ohho doctor` and `ohho sim --robot omnibot --seconds 2` are the CLI smoke steps in [`.github/workflows/ci.yml`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/.github/workflows/ci.yml). The latest [CI run on main](https://github.com/ohho-robotics/ohho-sdk/actions/runs/36842316506) succeeded.
+`ohho doctor` and `ohho sim --robot omnibot --seconds 2` are the CLI smoke steps in [`.github/workflows/ci.yml`](https://raw.githubusercontent.com/ohho-robotics/ohho-os/main/.github/workflows/ci.yml). The latest [CI run on main](https://github.com/ohho-robotics/ohho-os/actions/runs/36842316506) succeeded.
 
-The TypeScript workspace under [`ts/`](https://github.com/ohho-robotics/ohho-sdk/tree/main/ts) is not published to npm. [`ts/package.json`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/package.json) sets `"private": true`.
+The TypeScript workspace in [ohho-sdk](https://github.com/ohho-robotics/ohho-sdk) is not published to npm. [`package.json`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/package.json) sets `"private": true`.
 
-*   [`@ohho/connect`](https://github.com/ohho-robotics/ohho-sdk/tree/main/ts/packages/connect) — adapter sources [`webserial.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/packages/connect/src/webserial.ts), [`webbluetooth.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/packages/connect/src/webbluetooth.ts), [`rosbridge.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/packages/connect/src/rosbridge.ts), and [`yahboom.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/packages/connect/src/yahboom.ts).
-*   [`@ohho/schemas`](https://github.com/ohho-robotics/ohho-sdk/tree/main/ts/packages/schemas) — schema sources. [`package.json`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/packages/schemas/package.json) depends on `zod`.
-*   [`@ohho/mcp`](https://github.com/ohho-robotics/ohho-sdk/tree/main/ts/packages/mcp) — MCP tool modules and [`registry.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/packages/mcp/src/registry.ts).
-*   [`@ohho/client`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/ts/packages/client/src/api.ts) — `OhhOClient` is an empty class.
+*   [`@ohho/connect`](https://github.com/ohho-robotics/ohho-sdk/tree/main/packages/connect) — adapter sources [`webserial.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/packages/connect/src/webserial.ts), [`webbluetooth.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/packages/connect/src/webbluetooth.ts), [`rosbridge.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/packages/connect/src/rosbridge.ts), and [`yahboom.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/packages/connect/src/yahboom.ts).
+*   [`@ohho/schemas`](https://github.com/ohho-robotics/ohho-sdk/tree/main/packages/schemas) — schema sources. [`package.json`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/packages/schemas/package.json) depends on `zod`.
+*   [`@ohho/mcp`](https://github.com/ohho-robotics/ohho-sdk/tree/main/packages/mcp) — MCP tool modules and [`registry.ts`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/packages/mcp/src/registry.ts).
+*   [`@ohho/client`](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/packages/client/src/api.ts) — `OhhOClient` is an empty class.
 
 ## OhhO-VR
 
@@ -78,7 +78,7 @@ These are directories in [OmniBot](https://github.com/ohho-robotics/OmniBot), no
 
 ## Get started
 
-CPU demo from [ohho-sdk CI](https://raw.githubusercontent.com/ohho-robotics/ohho-sdk/main/.github/workflows/ci.yml). No robot, ROS install, or container is required:
+CPU demo from [ohho-os CI](https://raw.githubusercontent.com/ohho-robotics/ohho-os/main/.github/workflows/ci.yml). No robot, ROS install, or container is required:
 
 ```bash
 pip install ohho-os
