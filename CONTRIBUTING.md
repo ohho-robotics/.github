@@ -36,7 +36,7 @@ Do not publish, including as vision: logo, partner, insurer, or vendor walls; cu
 
 ## License
 
-OhhO's public repositories are Apache-2.0. Vendored third-party code keeps its own license.
+OhhO's public repositories are Apache-2.0, apart from ohho-os. Ohho OS is free. The SDK, adapters and tools behind it are open source. Vendored third-party code keeps its own license.
 
 ## Conduct
 

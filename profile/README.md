@@ -33,7 +33,7 @@ What is in the tree:
 
 ## ohho-os and ohho-sdk
 
-[ohho-os](https://github.com/ohho-robotics/ohho-os) is OhhO OS: the Python package [`ohho-os`](https://pypi.org/project/ohho-os/) ([Apache-2.0](https://raw.githubusercontent.com/ohho-robotics/ohho-os/main/LICENSE)). [`pyproject.toml`](https://raw.githubusercontent.com/ohho-robotics/ohho-os/main/pyproject.toml) sets `name = "ohho-os"`. The [v1.1.2 release run](https://github.com/ohho-robotics/ohho-os/actions/runs/36844693250) completed successfully, and the [1.1.2 project page](https://pypi.org/project/ohho-os/1.1.2/) is the published distribution.
+[ohho-os](https://github.com/ohho-robotics/ohho-os) is OhhO OS: the Python package [`ohho-os`](https://pypi.org/project/ohho-os/). Ohho OS is free. The SDK, adapters and tools behind it are open source. [`pyproject.toml`](https://raw.githubusercontent.com/ohho-robotics/ohho-os/main/pyproject.toml) sets `name = "ohho-os"`. The [v1.1.2 release run](https://github.com/ohho-robotics/ohho-os/actions/runs/36844693250) completed successfully, and the [1.1.2 project page](https://pypi.org/project/ohho-os/1.1.2/) is the published distribution.
 
 ```bash
 pip install ohho-os
@@ -92,4 +92,4 @@ In OmniBot, [`src/`](https://github.com/ohho-robotics/OmniBot/tree/main/src) is 
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md), [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md), and [SECURITY.md](../SECURITY.md).
 
-This repository is [Apache-2.0](../LICENSE). The public repositories linked above are Apache-2.0; each Apache-2.0 link points at that repository's `LICENSE` file. Vendored third-party code keeps its own licence (OhhO-VR [NOTICE](https://raw.githubusercontent.com/ohho-robotics/OhhO-VR/main/NOTICE), OmniBot [NOTICE](https://raw.githubusercontent.com/ohho-robotics/OmniBot/main/NOTICE)).
+This repository is [Apache-2.0](../LICENSE). Apart from ohho-os, the public repositories linked above are Apache-2.0; each Apache-2.0 link points at that repository's `LICENSE` file. Ohho OS is free. The SDK, adapters and tools behind it are open source. Vendored third-party code keeps its own licence (OhhO-VR [NOTICE](https://raw.githubusercontent.com/ohho-robotics/OhhO-VR/main/NOTICE), OmniBot [NOTICE](https://raw.githubusercontent.com/ohho-robotics/OmniBot/main/NOTICE)).
