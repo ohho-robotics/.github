@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Email [varun.vaidhiya@gmail.com](mailto:varun.vaidhiya@gmail.com). This is the public email on the GitHub organization profile.
+Email [varun@ohho-robotics.com](mailto:varun@ohho-robotics.com). This is the public email on the GitHub organization profile.
 
 Include:
 
