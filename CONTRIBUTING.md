@@ -20,6 +20,15 @@ OhhO Robotics is a small public GitHub organization. The code a contributor can 
 1. Fork the repository you are changing and open a pull request against `main`.
 2. The org-default template ([.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md)) asks for what changed, how to run it, and evidence (a CI run, a test, or a dated video, trial CSV, MCAP, or dataset). Fill that in. A repository with its own template keeps that file instead.
 3. Do not add a public claim (a feature marked as working, a license, a compliance badge, or a "clone and run" command) unless the pull request links to the code, a CI run, or a recording that shows it.
+4. Sign off every commit (see [Developer Certificate of Origin](#developer-certificate-of-origin)).
+
+## Developer Certificate of Origin
+
+Every commit must be signed off (`git commit -s`). The sign-off adds a `Signed-off-by: Your Name <email>` line and certifies the [Developer Certificate of Origin 1.1](https://developercertificate.org/): you wrote the change, or have the right to submit it under the repository's licence.
+
+Contributions are accepted under the repository's licence (Apache-2.0, section 5). You keep the copyright in your contribution. There is no contributor licence agreement (CLA).
+
+To sign off commits you already made: `git commit --amend -s` for the last commit, or `git rebase --signoff main` for a branch.
 
 ## Showcase rule
 
