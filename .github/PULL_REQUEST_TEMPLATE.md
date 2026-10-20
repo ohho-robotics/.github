@@ -28,3 +28,7 @@
 
 - [ ] This pull request does not add a public claim unless it links to code, a CI run, or a recording.
 - [ ] This pull request does not add a compliance claim.
+
+## Sign-off
+
+- [ ] All commits are signed off (`git commit -s`) under the [DCO](https://github.com/ohho-robotics/.github/blob/main/CONTRIBUTING.md#developer-certificate-of-origin).
