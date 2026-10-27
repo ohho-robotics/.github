@@ -1,7 +1,8 @@
 <div align="center">
   <img src="ohho-logo.svg" alt="OhhO Robotics logo" width="200"/>
   <h1>OhhO Robotics</h1>
-  <p>Open-source mobile manipulation. The robot you can inspect today is <a href="https://github.com/ohho-robotics/OmniBot">OmniBot</a>.</p>
+  <p><strong>Ohho is the open harness layer for physical AI. Bring any model, we make it run on a real robot.</strong></p>
+  <p>Simulation (Gazebo) → Data (VR teleop into LeRobot datasets) → Policy runtime (OpenVLA, SmolVLA, RL over ROS 2) → Safety guards → Deployment (ohho-os). The robot you can inspect today is <a href="https://github.com/ohho-robotics/OmniBot">OmniBot</a>.</p>
 
   <a href="https://ohho-robotics.com">Website</a> ·
   <a href="https://www.linkedin.com/company/ohho-robotics/">LinkedIn</a> ·
