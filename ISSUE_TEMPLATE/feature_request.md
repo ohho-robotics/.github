@@ -1,13 +1,13 @@
 ---
 name: Feature request
-about: Suggest a new capability for OmniBot, ohho-os, or the OhhO apps
+about: Suggest a new capability for OmniBot
 title: "[Feature] "
 labels: enhancement
 assignees: ''
 ---
 
 ## Which repo / area?
-<!-- e.g. OmniBot (ROS 2 / sim / arm / Nav2 / LeRobot / VLA), ohho-sdk, OhhO-VR, Android app -->
+<!-- e.g. OmniBot (ROS 2 / sim / arm / Nav2 / LeRobot / VLA) -->
 
 ## Problem
 <!-- What are you trying to do, and what's stopping you? -->

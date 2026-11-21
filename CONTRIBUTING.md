@@ -1,19 +1,15 @@
 # Contributing
 
-OhhO Robotics is a small public GitHub organization. The code a contributor can actually open is listed below.
+OHHO ROBOTICS LTD has one open project: [OmniBot](https://github.com/ohho-robotics/ohho-omnibot) (Apache-2.0). That is where outside contributions go.
 
 ## Where to send a change
 
 | Repository | What it is |
 |---|---|
-| [OmniBot](https://github.com/ohho-robotics/OmniBot) | ROS 2 workspace, AI packages, digital-twin notes, and the mecanum, BEV, and Yahboom directories |
-| [ohho-os](https://github.com/ohho-robotics/ohho-os) | OhhO OS: Python package [`ohho-os`](https://pypi.org/project/ohho-os/) on PyPI |
-| [ohho-sdk](https://github.com/ohho-robotics/ohho-sdk) | TypeScript sources under [`packages/`](https://github.com/ohho-robotics/ohho-sdk/tree/main/packages) are a private workspace (`@ohho/client` is an empty class) |
-| [OhhO-VR](https://github.com/ohho-robotics/OhhO-VR) | Unity project for Quest teleop |
-| [ohho.apk](https://github.com/ohho-robotics/ohho.apk) | Kotlin Android project |
+| [ohho-omnibot](https://github.com/ohho-robotics/ohho-omnibot) | OmniBot: ROS 2 workspace, AI packages, digital-twin notes, and the mecanum, BEV, and Yahboom directories |
 | [ohho-robotics/.github](https://github.com/ohho-robotics/.github) | This organization profile and the default community files |
 
-[ohho-humanoid](https://github.com/ohho-robotics/ohho-humanoid), [ohho-quadruped](https://github.com/ohho-robotics/ohho-quadruped), and [ohho-drone](https://github.com/ohho-robotics/ohho-drone) are **Concept — not started**. They do not contain a buildable robot stack. Please do not open feature work against them until there is code to build.
+OhhO OS, the OhhO SDK, the Quest and Android apps, the console, and the quadruped, humanoid and drone tracks are proprietary and live in private repositories. They do not accept outside contributions. OmniBot talks to OhhO OS only through public interfaces; see the boundary section in the [OmniBot README](https://github.com/ohho-robotics/ohho-omnibot#boundary-with-ohho-os).
 
 ## Pull requests
 
@@ -26,7 +22,7 @@ OhhO Robotics is a small public GitHub organization. The code a contributor can 
 
 Every commit must be signed off (`git commit -s`). The sign-off adds a `Signed-off-by: Your Name <email>` line and certifies the [Developer Certificate of Origin 1.1](https://developercertificate.org/): you wrote the change, or have the right to submit it under the repository's licence.
 
-Contributions are accepted under the repository's licence (Apache-2.0, section 5). You keep the copyright in your contribution. There is no contributor licence agreement (CLA).
+Contributions to the open repositories are accepted under their licence (Apache-2.0, section 5). You keep the copyright in your contribution. There is no contributor licence agreement (CLA).
 
 To sign off commits you already made: `git commit --amend -s` for the last commit, or `git rebase --signoff main` for a branch.
 
@@ -34,8 +30,8 @@ To sign off commits you already made: `git commit --amend -s` for the last commi
 
 A feature moves to Built on the live site only when all four are true. The [public roadmap](https://ohho-robotics.com/roadmap) (page not live yet) lists Built, In progress, and Vision.
 
-1. **Merged.** The code is on `main` of a public `ohho-robotics` repository. Private code does not count.
-2. **Runnable.** A stranger can run it from the README in 15 minutes or less (sim or laptop). If it needs hardware, the page says "needs hardware" and links a dated video plus logs or bag files.
+1. **Merged.** The code is on `main` of an `ohho-robotics` repository. For a private repository, the evidence in point 3 must be something we can show (a CI run summary, a dated video, or logs).
+2. **Runnable.** A stranger (or, for proprietary code, an evaluation licensee) can run it from the README in 15 minutes or less (sim or laptop). If it needs hardware, the page says "needs hardware" and links a dated video plus logs or bag files.
 3. **Evidenced.** At least one of: a green CI run that exercises the feature, a test file, or a dated video, trial CSV, MCAP file, or dataset URL.
 4. **Copy matches the evidence.** Every number (tests, latency, success rate, version) comes from code or CI output. Do not use adjectives the evidence does not support ("production-ready", "any robot", "real-time", "enterprise").
 
@@ -45,7 +41,7 @@ Do not publish, including as vision: logo, partner, insurer, or vendor walls; cu
 
 ## License
 
-OhhO's public repositories are Apache-2.0. Vendored third-party code keeps its own license.
+OmniBot (`ohho-omnibot`) and this `.github` repository are Apache-2.0. All other OHHO ROBOTICS LTD software is proprietary (all rights reserved); earlier public versions up to each repository's `last-apache-2.0` tag stay under Apache-2.0. Vendored third-party code keeps its own license.
 
 ## Conduct
 

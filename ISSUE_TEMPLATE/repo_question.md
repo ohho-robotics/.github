@@ -8,7 +8,7 @@ assignees: ""
 
 ## Repository
 
-OmniBot, ohho-sdk, OhhO-VR, ohho.apk, or .github.
+ohho-omnibot or .github. OhhO OS and the OhhO apps are proprietary; ask about them via https://ohho-robotics.com.
 
 ## Question
 
