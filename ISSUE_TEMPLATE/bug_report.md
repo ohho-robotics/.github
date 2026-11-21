@@ -8,7 +8,7 @@ assignees: ""
 
 ## Repository
 
-Which repository and path? (OmniBot, ohho-sdk, OhhO-VR, ohho.apk, or .github)
+Which repository and path? (ohho-omnibot or .github)
 
 ## What happened
 
